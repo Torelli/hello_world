@@ -20,7 +20,17 @@ public class HelloWorldController {
     public ArrayList<String> listaBSM() {
 
         ArrayList<String> lista = new ArrayList<>(
-                Arrays.asList("Responsabilidade Pessoal","Persistência","Mentalidade de Crescimento", "Orientação ao Futuro")
+                Arrays.asList("Responsabilidade Pessoal", "Persistência", "Mentalidade de Crescimento", "Orientação ao Futuro")
+        );
+
+        return lista;
+    }
+
+    @GetMapping("/objetivos")
+    public ArrayList<String> listaObjetivos() {
+
+        ArrayList<String> lista = new ArrayList<>(
+                Arrays.asList("Me aperfeiçoar no Java", "Aprender testes unitários", "Me desafiar", "Desenvolver APIs úteis")
         );
 
         return lista;
