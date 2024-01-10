@@ -16,4 +16,14 @@ public class HelloWorldController {
         return "Hello World!";
     }
 
+    @GetMapping("/bsm")
+    public ArrayList<String> listaBSM() {
+
+        ArrayList<String> lista = new ArrayList<>(
+                Arrays.asList("Responsabilidade Pessoal","Persistência","Mentalidade de Crescimento", "Orientação ao Futuro")
+        );
+
+        return lista;
+    }
+
 }
